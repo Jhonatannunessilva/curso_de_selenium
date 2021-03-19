@@ -15,6 +15,15 @@ Esse projeto está sendo feito com base no curso [Selenium com Python](https://w
 - **FirefoxWebElement.text()**: Utilizado para retornar o texto que está dentro desse elemento.
 - **browser.quit()**: Utilizado para fechar o navegador.
 - **FirefoxWebElement.get_attribute("nome_do_atributo")**: Utilizado para retornar o valor que pertence ao atributo passado como argumento, caso o elemento não tenha o atributo será retornado **None**.
+- **Busca Aninhada**: Utilizada para buscar apenas elementos que estão dentro de um elemento em especifico, ou seja, é uma busca apenas no escopo do elemento "pai".
+- **FirefoxWebElement.find_element_by_tag_name("nome_da_tag")**: Utilizado para retornar a primeira ocorrência da tag passada como argumento, mas essa busca irá ser feita apenas no escopo interno do WebElement que chamou o método.
+- **FirefoxWebElement.find_elements_by_tag_name("nome_da_tag")**: Utilizado para retornar todas as ocorrências da tag passada como argumento, mas essa busca irá ser feita apenas no escopo interno do WebElement que chamou o método.
+- **browser.back()**: Utilizado para voltar no histórico da janela.
+- **browser.forward()**: Utilizado para avançar no histórico da janela.
+- **browser.current_url**: Utilizado para obter a url da janela/página atual.
+- **from urllib.parse import urlparse()**: Biblioteca built-in utilizada para converter a url, que está no formato str, para um objeto que facilita a extração de valores específicos.
+- **browser.title**: Utilizado para obter o titulo da janela/página atual.
+- **browser.refresh()**: Utilizado para atualizar (F5) a janela/página atual.
 
 **OBS**:
 
