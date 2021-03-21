@@ -24,6 +24,11 @@ Esse projeto está sendo feito com base no curso [Selenium com Python](https://w
 - **from urllib.parse import urlparse()**: Biblioteca built-in utilizada para converter a url, que está no formato str, para um objeto que facilita a extração de valores específicos.
 - **browser.title**: Utilizado para obter o titulo da janela/página atual.
 - **browser.refresh()**: Utilizado para atualizar (F5) a janela/página atual.
+- **browser.find_element_by_id("id_qualquer")**: Utilizado para retornar o WebElement que tem em seu atributo "id" o valor passado como argumento.
+- **browser.find_element_by_class_name("classe_qualquer")**: Utilizado para retornar a primeira ocorrência de um WebElement que tenha em seu atributo "class" o valor passado como argumento.
+- **browser.find_elements_by_class_name("classe_qualquer")**: Utilizado para retornar todos os WebElements que tenham em seu atributo "class" o valor passado como argumento.
+- **browser.find_element_by_name("nome_qualquer")**: Utilizado para retornar a primeira ocorrência de um WebElement que tenha em seu atributo "name" o valor passado como argumento.
+- **FirefoxWebElement.send_keys("texto")**: Utilizado para "digitar" o texto passado como argumento.
 
 **OBS**:
 
